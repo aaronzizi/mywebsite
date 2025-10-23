@@ -21,7 +21,7 @@ const MentionsLegales = () => {
 
             <section>
               <h2 className="text-2xl font-semibold text-foreground mb-4">Hébergement</h2>
-              <p>Ce site est hébergé par Lovable.dev</p>
+              <p>Ce site est hébergé par IONOS</p>
             </section>
 
             <section>

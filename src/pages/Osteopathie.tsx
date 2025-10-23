@@ -7,6 +7,7 @@ import baby from "@/assets/baby.jpg";
 import athlete from "@/assets/athlete.jpg";
 import senior from "@/assets/senior.jpg";
 import treatmentHands from "@/assets/treatment-hands.jpg";
+import Seo from "@/components/Seo";
 
 const Osteopathie = () => {
   const patientCategories = [
@@ -89,6 +90,11 @@ const Osteopathie = () => {
 
   return (
     <div className="min-h-screen">
+      <Seo
+        title="L'Ostéopathie — principes, bienfaits et pour qui ?"
+        description="Comprendre l'ostéopathie, ses principes fondateurs, ses bienfaits et à qui elle s'adresse."
+        path="/osteopathie"
+      />
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary/5 via-background to-secondary/20 section-padding">
         <div className="container-custom">

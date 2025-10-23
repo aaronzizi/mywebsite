@@ -1,10 +1,16 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { MapPin, Phone, Mail, Clock, ArrowRight } from "lucide-react";
+import Seo from "@/components/Seo";
 
 const Contact = () => {
   return (
     <div className="min-h-screen">
+      <Seo
+        title="Contact et accès — Ostéopathe D.O. à Pantin"
+        description="Adresse, téléphone, horaires et prise de rendez-vous Doctolib. Cabinet au 11 Rue Etienne Marcel, Pantin."
+        path="/contact"
+      />
       <section className="relative bg-gradient-to-br from-primary/5 via-background to-secondary/20 section-padding">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center">

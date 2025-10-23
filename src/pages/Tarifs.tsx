@@ -2,6 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Euro, CreditCard, Banknote, Shield, CheckCircle2, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import Seo from "@/components/Seo";
 
 const Tarifs = () => {
   const mutuellesExamples = [
@@ -12,6 +13,11 @@ const Tarifs = () => {
 
   return (
     <div className="min-h-screen">
+      <Seo
+        title="Tarifs et remboursement — Ostéopathie Pantin"
+        description="Honoraires des consultations, moyens de paiement et prise en charge par les mutuelles."
+        path="/tarifs"
+      />
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary/5 via-background to-secondary/20 section-padding">
         <div className="container-custom">

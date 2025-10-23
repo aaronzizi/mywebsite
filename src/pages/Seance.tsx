@@ -9,6 +9,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import Seo from "@/components/Seo";
 
 const Seance = () => {
   const steps = [
@@ -102,6 +103,11 @@ const Seance = () => {
 
   return (
     <div className="min-h-screen">
+      <Seo
+        title="Déroulement d'une séance d'ostéopathie"
+        description="Les 4 étapes clés de la consultation, informations pratiques et FAQ pour préparer votre visite."
+        path="/seance"
+      />
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary/5 via-background to-secondary/20 section-padding">
         <div className="container-custom">
@@ -152,30 +158,6 @@ const Seance = () => {
         </div>
       </section>
 
-      {/* Image Section */}
-      <section className="section-padding bg-secondary/20">
-        <div className="container-custom">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <img
-              src={treatmentHands}
-              alt="Traitement ostéopathique professionnel"
-              className="rounded-2xl shadow-2xl w-full h-[500px] object-cover"
-            />
-            <div className="space-y-6">
-              <h2 className="text-3xl font-bold">Des Techniques Adaptées à Chacun</h2>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Chaque patient est unique, et chaque séance est personnalisée. Je n'applique jamais de protocole standard,
-                mais j'adapte mes techniques en fonction de votre âge, de votre morphologie, de votre état de santé et de
-                vos objectifs thérapeutiques.
-              </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Que vous soyez nourrisson, femme enceinte, sportif ou senior, je choisis les approches les plus douces
-                et les plus efficaces pour vous. Votre confort et votre sécurité sont mes priorités absolues.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Practical Infos Section */}
       <section className="section-padding bg-background">

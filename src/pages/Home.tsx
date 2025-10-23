@@ -11,6 +11,7 @@ import pregnantWoman from "@/assets/pregnant-woman.jpg";
 import baby from "@/assets/baby.jpg";
 import athlete from "@/assets/athlete.jpg";
 import senior from "@/assets/senior.jpg";
+import Seo from "@/components/Seo";
 
 const Home = () => {
   const [api, setApi] = useState<CarouselApi>();
@@ -111,13 +112,34 @@ const Home = () => {
 
   return (
     <div className="min-h-screen">
+      <Seo
+        title="Ostéopathe D.O. à Pantin – Aaron Zitoun"
+        description="Soulagement des douleurs, suivi grossesse, nourrissons, sportifs. Prise de RDV en ligne au 11 Rue Etienne Marcel, Pantin."
+        path="/"
+        schemaMarkup={{
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          name: "Aaron Zitoun – Ostéopathe D.O.",
+          image: (import.meta.env.VITE_OG_IMAGE as string),
+          url: (import.meta.env.VITE_SITE_URL as string),
+          telephone: "+33148458808",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "11 Rue Etienne Marcel",
+            addressLocality: "Pantin",
+            postalCode: "93500",
+            addressCountry: "FR",
+          },
+          openingHoursSpecification: [{ "@type": "OpeningHoursSpecification", dayOfWeek: "Monday" }],
+        }}
+      />
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary/5 via-background to-secondary/20 overflow-hidden">
         <div className="container-custom section-padding">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <div className="inline-block px-4 py-2 bg-gradient-to-r from-primary/10 to-secondary/20 rounded-full text-sm font-medium text-primary border border-primary/20 shadow-sm hover:shadow-md hover:scale-105 transition-all duration-300">
-                Ostéopathe D.O. diplômé à Pantin
+                Ostéopathe D.O.
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
                 Aaron Zitoun,

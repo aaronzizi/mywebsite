@@ -4,6 +4,7 @@ import { ArrowRight, GraduationCap, Heart, Target, Award } from "lucide-react";
 import { Link } from "react-router-dom";
 import aaronPhoto from "@/assets/aaron-zitoun.png";
 import treatmentHands from "@/assets/treatment-hands.jpg";
+import Seo from "@/components/Seo";
 const Parcours = () => {
   const values = [{
     icon: Heart,
@@ -19,6 +20,11 @@ const Parcours = () => {
     description: "Formation continue et techniques éprouvées pour vous garantir des soins de qualité optimale."
   }];
   return <div className="min-h-screen">
+      <Seo
+        title="Mon Parcours — Aaron Zitoun, Ostéopathe D.O."
+        description="Vocation, valeurs et philosophie de soin au service de votre bien-être à Pantin."
+        path="/parcours"
+      />
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary/5 via-background to-secondary/20 section-padding">
         <div className="container-custom">
@@ -45,7 +51,7 @@ const Parcours = () => {
             </div>
             <div className="space-y-6">
               <div>
-                <h2 className="text-3xl font-bold mb-4">La Vocation</h2>
+                <h2 className="text-3xl font-bold mb-4">Ma Vocation</h2>
                 <p className="text-lg text-muted-foreground leading-relaxed">
                   Mon parcours vers l'ostéopathie n'a pas été le fruit du hasard. Dès mon adolescence, j'ai été fasciné
                   par la capacité du corps humain à s'adapter et à se régénérer. Cette curiosité, nourrie par une
@@ -61,51 +67,24 @@ const Parcours = () => {
             </div>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
-            <div className="space-y-6 lg:order-2">
-              <div>
-                <h2 className="text-3xl font-bold mb-4">Une Formation d'Excellence</h2>
-                <div className="space-y-4">
-                  <div className="flex items-start gap-3">
-                    <GraduationCap className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
-                    <div>
-                      <h3 className="font-semibold text-lg mb-2">École d'Ostéopathie de Paris (EOP)</h3>
-                      <p className="text-muted-foreground">
-                        J'ai obtenu mon diplôme d'ostéopathe (D.O.) à l'École d'Ostéopathie de Paris, une institution
-                        reconnue pour l'excellence de son enseignement et la rigueur de sa formation.
-                      </p>
+                {/* Values Section */}
+        <section className="section-padding bg-background">
+          <div className="container-custom">
+            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Mes Valeurs</h2>
+            <div className="grid md:grid-cols-3 gap-8">
+              {values.map((value, index) => <Card key={index} className="text-center group hover:shadow-lg transition-shadow">
+                  <CardContent className="p-8">
+                    <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 mb-6 group-hover:bg-primary/20 transition-colors">
+                      <value.icon className="h-8 w-8 text-primary" />
                     </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <Award className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
-                    <div>
-                      <h3 className="font-semibold text-lg mb-2">Cursus Complet de 5 Ans</h3>
-                      <p className="text-muted-foreground">
-                        Mon parcours académique a représenté <strong>5 années d'études intensives</strong>, agréées par
-                        le Ministère de la Santé et inscrites au RNCP au niveau 1 (équivalent Bac+5). Cette formation
-                        m'a permis d'acquérir des compétences approfondies en anatomie, physiologie, biomécanique et
-                        techniques ostéopathiques.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <Target className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
-                    <div>
-                      <h3 className="font-semibold text-lg mb-2">Formation Continue</h3>
-                      <p className="text-muted-foreground">
-                        L'ostéopathie est une discipline en constante évolution. Je m'engage à poursuivre ma formation
-                        tout au long de ma carrière pour vous offrir les techniques les plus récentes et les plus
-                        efficaces.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="relative lg:order-1">
-              <img src={treatmentHands} alt="Traitement ostéopathique doux et professionnel" className="rounded-2xl shadow-xl w-full h-[500px] object-cover" />
+                    <h3 className="text-xl font-semibold mb-3">{value.title}</h3>
+                    <p className="text-muted-foreground">{value.description}</p>
+                  </CardContent>
+                </Card>)}
             </div>
           </div>
+        </section>
+
         </div>
       </section>
 
@@ -145,23 +124,6 @@ const Parcours = () => {
         </div>
       </section>
 
-      {/* Values Section */}
-      <section className="section-padding bg-background">
-        <div className="container-custom">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Mes Valeurs</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {values.map((value, index) => <Card key={index} className="text-center group hover:shadow-lg transition-shadow">
-                <CardContent className="p-8">
-                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 mb-6 group-hover:bg-primary/20 transition-colors">
-                    <value.icon className="h-8 w-8 text-primary" />
-                  </div>
-                  <h3 className="text-xl font-semibold mb-3">{value.title}</h3>
-                  <p className="text-muted-foreground">{value.description}</p>
-                </CardContent>
-              </Card>)}
-          </div>
-        </div>
-      </section>
 
       {/* CTA Section */}
       <section className="section-padding bg-gradient-to-r from-primary to-primary/80 text-white">
