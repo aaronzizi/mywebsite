@@ -104,7 +104,7 @@ const Osteopathie = () => {
       </section>
 
       {/* Définition Section */}
-      <section className="section-padding bg-background">
+      <section className="section-p mb-14 bg-background">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-8">Qu'est-ce que l'ostéopathie ?</h2>
