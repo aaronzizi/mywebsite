@@ -59,7 +59,7 @@ const Seance = () => {
     {
       icon: Clock,
       title: "Durée de la séance",
-      content: "Une séance complète dure environ 45 à 60 minutes. Ce temps permet un traitement complet et personnalisé.",
+      content: "Une séance complète dure 45  minutes. Ce temps permet un traitement complet et personnalisé.",
     },
     {
       icon: Info,
