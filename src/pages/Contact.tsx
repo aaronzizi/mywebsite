@@ -53,7 +53,7 @@ const Contact = () => {
                     <div>
                       <h3 className="font-semibold text-lg mb-2">Email</h3>
                       <a href="mailto:contact@zitoun-osteopathe-pantin.fr" className="text-primary hover:underline">
-                        contact@zitoun-osteopathe-pantin.fr
+                         aaronzitoun12@gmail.com
                       </a>
                     </div>
                   </div>
@@ -62,8 +62,8 @@ const Contact = () => {
                     <div>
                       <h3 className="font-semibold text-lg mb-2">Horaires</h3>
                       <div className="text-muted-foreground space-y-1">
-                        <p>Lundi - Vendredi : 9h00 - 19h00</p>
-                        <p>Samedi : 9h00 - 13h00</p>
+                        <p>Lundi, Mercredi et Jeudi</p>
+                        <p>9h00 - 19h30</p>
                         <p className="text-sm italic mt-2">Sur rendez-vous uniquement</p>
                       </div>
                     </div>
@@ -93,9 +93,10 @@ const Contact = () => {
                 <CardContent className="p-6">
                   <h3 className="font-semibold text-lg mb-3">Accès & Transports</h3>
                   <div className="space-y-2 text-sm text-muted-foreground">
-                    <p>🚇 <strong>Métro :</strong> Église de Pantin (ligne 5)</p>
-                    <p>🚌 <strong>Bus :</strong> Lignes 61, 249</p>
+                    <p>🚇 <strong>Métro :</strong> Hoche (ligne 5)</p>
+                    <p>🚌 <strong>Bus :</strong> Ligne 330 - Etienne Marcel - Cornet</p>
                     <p>🚗 <strong>Voiture :</strong> Stationnement possible à proximité</p>
+                    <p>♿️ <strong>Handicaper :</strong> Entrée accessible PMR</p>
                   </div>
                 </CardContent>
               </Card>

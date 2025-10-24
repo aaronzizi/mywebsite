@@ -72,7 +72,7 @@ const Footer = () => {
               <li className="flex items-center gap-2">
                 <Mail className="h-4 w-4 text-primary flex-shrink-0" />
                 <a href="mailto:contact@zitoun-osteopathe-pantin.fr" className="text-muted-foreground hover:text-primary transition-colors">
-                  contact@zitoun-osteopathe-pantin.fr
+                  aaronzitoun12@gmail.com
                 </a>
               </li>
             </ul>
@@ -86,10 +86,8 @@ const Footer = () => {
                 <Clock className="h-4 w-4 mt-0.5 text-primary flex-shrink-0" />
                 <div className="text-muted-foreground">
                   <p className="font-medium text-foreground mb-2">Sur rendez-vous</p>
-                  <p>Lundi - Vendredi</p>
-                  <p>9h00 - 19h00</p>
-                  <p className="mt-2">Samedi</p>
-                  <p>9h00 - 13h00</p>
+                  <p>Lundi, Mercredi et Jeudi</p>
+                  <p>9h00 - 19h30</p>
                 </div>
               </div>
             </div>

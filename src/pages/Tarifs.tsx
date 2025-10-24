@@ -47,9 +47,9 @@ const Tarifs = () => {
                     <Euro className="h-8 w-8 text-primary" />
                   </div>
                   <h3 className="text-2xl font-bold mb-2">Adulte</h3>
-                  <div className="text-5xl font-bold text-primary mb-4">70€</div>
+                  <div className="text-5xl font-bold text-primary mb-4">65€</div>
                   <p className="text-muted-foreground">
-                    Consultation complète d'environ 45-60 minutes
+                    Consultation complète de 45 minutes
                   </p>
                 </CardContent>
               </Card>
@@ -60,7 +60,7 @@ const Tarifs = () => {
                     <Euro className="h-8 w-8 text-accent" />
                   </div>
                   <h3 className="text-2xl font-bold mb-2">Nourrisson / Enfant</h3>
-                  <div className="text-5xl font-bold text-accent mb-4">65€</div>
+                  <div className="text-5xl font-bold text-accent mb-4">60€</div>
                   <p className="text-muted-foreground">
                     Consultation adaptée aux plus jeunes
                   </p>
@@ -212,7 +212,7 @@ const Tarifs = () => {
                     <li className="flex items-start gap-3">
                       <Banknote className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
                       <span>
-                        Toute annulation ou modification de rendez-vous doit se faire <strong>au moins 24 heures à l'avance</strong>
+                        Toute annulation ou modification de rendez-vous doit se faire <strong>au moins 24 heures à l'avance </strong>
                         par téléphone ou via Doctolib.
                       </span>
                     </li>

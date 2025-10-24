@@ -69,7 +69,7 @@ const Seance = () => {
     {
       icon: Info,
       title: "Après la séance",
-      content: "Il est fréquent de ressentir une légère fatigue ou des courbatures dans les 24 à 48 heures suivant la séance. Ces réactions sont normales : elles témoignent du travail d'adaptation de votre corps. Elles disparaissent généralement rapidement.",
+      content: "Il est fréquent de ressentir une légère fatigue ou des courbatures dans les 24 à 72 heures suivant la séance. Ces réactions sont normales : elles témoignent du travail d'adaptation de votre corps. Elles disparaissent généralement rapidement.",
     },
     {
       icon: Info,

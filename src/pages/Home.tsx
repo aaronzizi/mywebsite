@@ -420,17 +420,18 @@ const Home = () => {
                   <div>
                     <h3 className="font-semibold text-lg mb-2">Horaires</h3>
                     <div className="text-muted-foreground space-y-1">
-                      <p>Lundi - Vendredi : 9h00 - 19h00</p>
-                      <p>Samedi : 9h00 - 13h00</p>
+                      <p>Lundi, Mercredi et Jeudi</p>
+                      <p>9h00 - 19h30</p>
                       <p className="text-sm italic mt-2">Sur rendez-vous uniquement</p>
                     </div>
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg mb-2">Accès</h3>
                     <div className="text-muted-foreground space-y-1">
-                      <p>🚇 Métro : Église de Pantin (ligne 5)</p>
-                      <p>🚌 Bus : Lignes 61, 249</p>
-                      <p>🚗 Stationnement possible à proximité</p>
+                      <p>🚇 <strong>Métro :</strong> Hoche (ligne 5)</p>
+                      <p>🚌 <strong>Bus :</strong> Ligne 330 - Etienne Marcel - Cornet</p>
+                      <p>🚗 <strong>Voiture :</strong> Stationnement possible à proximité</p>
+                      <p>♿️ <strong>Handicaper :</strong> Entrée accessible PMR</p>
                     </div>
                   </div>
                 </CardContent>
