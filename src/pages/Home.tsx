@@ -12,6 +12,7 @@ import baby from "@/assets/baby.jpg";
 import athlete from "@/assets/athlete.jpg";
 import senior from "@/assets/senior.jpg";
 import Seo from "@/components/Seo";
+import googleLogo from "@/assets/logo-google.png";
 
 const Home = () => {
   const [api, setApi] = useState<CarouselApi>();
@@ -167,7 +168,7 @@ const Home = () => {
                 </a>
               </div>
               <p className="text-sm text-muted-foreground">
-                📍 11 Rue Etienne Marcel, 93500 Pantin • ☎️ 01 48 45 88 08
+                📍 11 Rue Etienne Marcel, 93500 Pantin
               </p>
             </div>
             <div className="relative">
@@ -482,10 +483,18 @@ const Home = () => {
 
           {/* Google Reviews CTA */}
           <div className="mt-8 flex flex-col items-center gap-3">
-            <div className="flex items-center gap-1">
-              {[...Array(5)].map((_, i) => (
-                <Star key={i} className="h-5 w-5 fill-yellow-400 text-yellow-400" />
-              ))}
+            <div className="flex items-center gap-2">
+              <img
+                src={googleLogo}
+                alt="Google"
+                className="h-5 w-5"
+                loading="lazy"
+              />
+              <div className="flex items-center gap-1">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="h-5 w-5 fill-yellow-400 text-yellow-400" />
+                ))}
+              </div>
               <span className="ml-2 text-sm text-muted-foreground">5,0 sur 5</span>
             </div>
             <a
