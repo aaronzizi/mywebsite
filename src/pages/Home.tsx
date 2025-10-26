@@ -341,12 +341,20 @@ const Home = () => {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Honoraires et Remboursement
-              <br />
-              <span className="text-primary">de votre consultation</span>
+              Tarifs
+              <span className="text-primary"> de votre consultation</span>
             </h1>
             <p className="text-xl text-muted-foreground">
-              Transparence totale sur les tarifs et les possibilités de prise en charge
+              Transparence totale sur les tarifs et les possibilités de prise en charge.
+            </p>
+            <p>
+              <Link
+                to="/tarifs"
+                className="mt-8 inline-flex items-center underline text-primary hover:text-primary/80 group"
+              >
+                Voir la prise en charge de votre mutuelle
+                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              </Link>
             </p>
           </div>
         </div>
@@ -439,14 +447,14 @@ const Home = () => {
             <CarouselContent>
               {testimonials.map((testimonial, index) => (
                 <CarouselItem key={index} className="md:basis-1/3">
-                  <Card className="bg-gradient-to-br from-primary/5 to-secondary/10">
-                    <CardContent className="p-8">
+                  <Card className="bg-gradient-to-br from-primary/5 to-secondary/10 h-full">
+                    <CardContent className="p-8 h-full flex flex-col">
                       <div className="flex gap-1 mb-4">
                         {[...Array(5)].map((_, i) => (
-                          <Star key={i} className="h-5 w-5 fill-primary text-primary" />
+                          <Star key={i} className="h-5 w-5 fill-yellow-400 text-yellow-400" />
                         ))}
                       </div>
-                      <p className="text-muted-foreground italic mb-6 text-lg">"{testimonial.text}"</p>
+                      <p className="text-muted-foreground italic mb-6 text-lg flex-grow">"{testimonial.text}"</p>
                       <div className="border-t pt-4">
                         <p className="font-semibold">{testimonial.author}</p>
                         <p className="text-sm text-muted-foreground">{testimonial.location}</p>
@@ -470,6 +478,25 @@ const Home = () => {
                 aria-label={`Aller au témoignage ${index + 1}`}
               />
             ))}
+          </div>
+
+          {/* Google Reviews CTA */}
+          <div className="mt-8 flex flex-col items-center gap-3">
+            <div className="flex items-center gap-1">
+              {[...Array(5)].map((_, i) => (
+                <Star key={i} className="h-5 w-5 fill-yellow-400 text-yellow-400" />
+              ))}
+              <span className="ml-2 text-sm text-muted-foreground">5,0 sur 5</span>
+            </div>
+            <a
+              href="https://www.google.com/search?q=aaron+zitoun+osteopathe+pantin+avis"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button size="sm" className="bg-primary hover:bg-primary/90">
+                Voir les avis Google
+              </Button>
+            </a>
           </div>
         </div>
       </section>

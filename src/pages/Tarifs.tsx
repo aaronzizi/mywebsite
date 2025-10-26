@@ -14,7 +14,7 @@ const Tarifs = () => {
   return (
     <div className="min-h-screen">
       <Seo
-        title="Tarifs et remboursement — Ostéopathie Pantin"
+        title="Aaron Zitoun | Tarifs et remboursement — Ostéopathie Pantin"
         description="Honoraires des consultations, moyens de paiement et prise en charge par les mutuelles."
         path="/tarifs"
       />
