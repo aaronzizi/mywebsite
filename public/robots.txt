@@ -12,3 +12,5 @@ Allow: /
 
 User-agent: *
 Allow: /
+
+Sitemap: https://aaronzitoun-osteopathe.fr/sitemap.xml

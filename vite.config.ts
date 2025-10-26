@@ -6,9 +6,9 @@ import ViteSitemap from "vite-plugin-sitemap";
 
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), "");
-  const siteUrl = env.VITE_SITE_URL || "https://aaronzitoun-osteopathe.fr";
-  const ogImage = env.VITE_OG_IMAGE || `${siteUrl}/og-default.jpg`;
-  const twitterSite = env.VITE_TWITTER_SITE || "@votre_compte";
+  const siteUrl = env.VITE_SITE_URL;
+  const ogImage = env.VITE_OG_IMAGE ;
+  const twitterSite = env.VITE_TWITTER_SITE;
 
   return {
     server: {
@@ -31,7 +31,21 @@ export default defineConfig(({ mode }) => {
       }),
       ViteSitemap({
         hostname: siteUrl,
+        dynamicRoutes: [
+          '/',
+          '/parcours',
+          '/osteopathie',
+          '/seance',
+          '/tarifs',
+          '/faq',
+          '/contact',
+          '/mentions-legales',
+        ],
         exclude: [],
+        changefreq: 'weekly',
+        priority: 0.7,
+        lastmod: new Date(),
+        readable: true,
         generateRobotsTxt: false,
       }),
     ],
