@@ -11,8 +11,8 @@ interface SeoProps {
 export default function Seo({ title, description, path = "", image, schemaMarkup }: SeoProps) {
   const siteUrl = import.meta.env.VITE_SITE_URL;
   const canonical = `${siteUrl}${path}`;
-  const ogImage = image || import.meta.env.VITE_OG_IMAGE || `${siteUrl}/og-default.jpg`;
-  const twitterSite = import.meta.env.VITE_TWITTER_SITE || "@votre_compte";
+  const ogImage = image || import.meta.env.VITE_OG_IMAGE;
+  const twitterSite = import.meta.env.VITE_TWITTER_SITE;
 
   return (
     <Helmet>

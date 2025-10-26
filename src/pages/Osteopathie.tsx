@@ -277,12 +277,12 @@ const Osteopathie = () => {
             N'attendez plus pour prendre soin de vous. Prenez rendez-vous dès maintenant.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="https://www.doctolib.fr/osteopathe/pantin/aaron-zitoun" target="_blank" rel="noopener noreferrer">
+            <Link to="https://www.doctolib.fr/osteopathe/pantin/aaron-zitoun" target="_blank" rel="noopener noreferrer">
               <Button size="lg" variant="secondary" className="w-full sm:w-auto">
                 Prendre RDV en ligne
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-            </a>
+            </Link>
             <Link to="/seance">
               <Button size="lg" variant="outline" className="w-full sm:w-auto bg-white/10 hover:bg-white/20 border-white text-white">
                 Découvrir le déroulement d'une séance
