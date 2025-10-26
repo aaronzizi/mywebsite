@@ -115,7 +115,7 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       <Seo
-        title="Ostéopathe D.O. à Pantin – Aaron Zitoun"
+        title="Aaron Zitoun | Ostéopathe D.O. à Pantin "
         description="Soulagement des douleurs, suivi grossesse, nourrissons, sportifs. Prise de RDV en ligne au 11 Rue Etienne Marcel, Pantin."
         path="/"
         schemaMarkup={{
