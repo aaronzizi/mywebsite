@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowRight, Baby, Heart, Users, Dumbbell, Clock, Star } from "lucide-react";
+import { ArrowRight, Baby, Heart, CreditCard, Euro, Users, Dumbbell, Clock, Star } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { Carousel, CarouselContent, CarouselItem, CarouselApi } from "@/components/ui/carousel";
@@ -45,35 +45,35 @@ const Home = () => {
       title: "Nourrissons",
       description: "Suivi doux dès les premières semaines",
       image: baby,
-      link: "/osteopathie#nourrissons",
+      link: "/osteopathie",
     },
     {
       icon: Heart,
       title: "Femmes Enceintes",
       description: "Accompagnement pendant la grossesse",
       image: pregnantWoman,
-      link: "/osteopathie#grossesse",
+      link: "/osteopathie",
     },
     {
       icon: Dumbbell,
       title: "Sportifs",
       description: "Performance et prévention des blessures",
       image: athlete,
-      link: "/osteopathie#sportifs",
+      link: "/osteopathie",
     },
     {
       icon: Users,
       title: "Adultes",
       description: "Soulagement des douleurs du quotidien",
       image: heroCabinet,
-      link: "/osteopathie#adultes",
+      link: "/osteopathie",
     },
     {
       icon: Clock,
       title: "Seniors",
       description: "Maintien de la mobilité et de l'autonomie",
       image: senior,
-      link: "/osteopathie#seniors",
+      link: "/osteopathie",
     },
   ];
 
@@ -327,11 +327,89 @@ const Home = () => {
               </div>
               <Link to="/parcours">
                 <Button size="lg" variant="outline" className="group mt-8">
-                  Découvrir mon parcours
+                  En savoir plus
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </Link>
             </div>
+          </div>
+        </div>
+      </section>
+
+       {/* Hero Section */}
+      <section className="relative bg-gradient-to-br from-primary/5 via-background to-secondary/20 section-padding">
+        <div className="container-custom">
+          <div className="max-w-4xl mx-auto text-center">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+              Honoraires et Remboursement
+              <br />
+              <span className="text-primary">de votre consultation</span>
+            </h1>
+            <p className="text-xl text-muted-foreground">
+              Transparence totale sur les tarifs et les possibilités de prise en charge
+            </p>
+          </div>
+        </div>
+      </section>
+
+
+      {/* Tarifs Section */}
+      <section className="section-p bg-background">
+        <div className="container-custom">
+          <div className="max-w-4xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-8 mb-12">
+              <Card className="border-2 border-primary">
+                <CardContent className="p-8 text-center">
+                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 mb-6">
+                    <Euro className="h-8 w-8 text-primary" />
+                  </div>
+                  <h3 className="text-2xl font-bold mb-2">Adulte</h3>
+                  <div className="text-5xl font-bold text-primary mb-4">65€</div>
+                  <p className="text-muted-foreground">
+                    Consultation complète de 45 minutes
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="border-2 border-accent">
+                <CardContent className="p-8 text-center">
+                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-accent/10 mb-6">
+                    <Euro className="h-8 w-8 text-accent" />
+                  </div>
+                  <h3 className="text-2xl font-bold mb-2">Nourrisson / Enfant</h3>
+                  <div className="text-5xl font-bold text-accent mb-4">60€</div>
+                  <p className="text-muted-foreground">
+                    Consultation adaptée aux plus jeunes
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+
+            <Card className="bg-secondary/30 border-none">
+              <CardContent className="p-8">
+                <h3 className="font-semibold text-lg mb-4 flex items-center gap-2">
+                  <CreditCard className="h-5 w-5 text-primary" />
+                  Moyens de Paiement Acceptés
+                </h3>
+                <div className="grid sm:grid-cols-3 gap-4">
+                  <div className="flex items-center gap-3">
+                    <div className="h-2 w-2 rounded-full bg-primary" />
+                    <span className="text-muted-foreground">Carte Bancaire</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div className="h-2 w-2 rounded-full bg-primary" />
+                    <span className="text-muted-foreground">Chèque</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div className="h-2 w-2 rounded-full bg-primary" />
+                    <span className="text-muted-foreground">Espèces</span>
+                  </div>
+                </div>
+                <p className="text-sm text-muted-foreground mt-4 italic">
+                  Le règlement s'effectue à la fin de chaque séance. Une facture vous sera remise pour votre mutuelle.
+                </p>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
