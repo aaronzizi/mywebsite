@@ -77,6 +77,8 @@ const Home = () => {
     },
   ];
 
+  const mobilePatientTypes = patientTypes.slice(0, 3);
+
   const testimonials = [
     {
       text: "Aaron est un ostéopathe exceptionnel. Ses mains expertes ont soulagé mes douleurs de dos chroniques en quelques séances. Je recommande vivement !",
@@ -84,28 +86,28 @@ const Home = () => {
       location: "Pantin",
     },
     {
-      text: "Excellent suivi pendant ma grossesse. Aaron a su me soulager avec des techniques douces et adaptées. Je me suis sentie écoutée et en confiance.",
-      author: "Sophie D.",
+      text: "Un grand merci à Mr.Zitoun pour son professionnalisme et sa compétence. La prise de rendez-vous a été très rapide, et son suivi m’a vraiment soulagé : mon mal de dos, qui me causait énormément de migraines, a nettement diminué. Je le recommande vivement et je n’hésiterai pas à y retourner.",
+      author: "Noa B.",
       location: "Le Pré-Saint-Gervais",
     },
     {
-      text: "En tant que sportif, j'ai trouvé en Aaron un vrai partenaire pour optimiser mes performances et prévenir les blessures. Professionnel et à l'écoute.",
-      author: "Thomas R.",
+      text: "Ostéopathe qui a pris soin de moi et honnêtement c’était une très bonne séance il était très compréhensif, et il a fait disparaître mes douleurs installées depuis plusieurs mois.",
+      author: "Nathan",
       location: "Les Lilas",
     },
     {
-      text: "Mon bébé avait des troubles du sommeil et des coliques. Après quelques séances, tout est rentré dans l'ordre. Merci Aaron pour ta douceur et ton professionnalisme.",
-      author: "Julie M.",
+      text: "Un praticien super efficace, tout ce qu’on attend d’un ostéo. Je recommande !",
+      author: "Axel B.",
       location: "Pantin",
     },
     {
-      text: "J'avais des douleurs cervicales persistantes depuis des années. Aaron a su identifier la cause et me soulager durablement. Un grand merci !",
-      author: "Pierre B.",
+      text: "J'ai adoré M. Zitoun ! Il était attentionné et professionnel ! Je venais de Londres et je me suis retrouvé avec un torticolis dû à une surcharge de travail ! M. Zitoun, grâce à ses mains magiques, a résolu mon problème avec le sourire en prime.",
+      author: "Muriel",
       location: "Romainville",
     },
     {
-      text: "Accompagnement parfait pour mes douleurs lombaires liées au travail sur ordinateur. Aaron donne aussi de précieux conseils pour prévenir les récidives.",
-      author: "Léa F.",
+      text: "Je suis très reconnaissante de ce praticien doté d’une approche bienveillante et d’une qualité d’écoute. J’ai surtout apprécié de ressortir en pouvant marcher normalement. Merci monsieur.",
+      author: "Gigette K.",
       location: "Bagnolet",
     },
   ];
@@ -177,7 +179,7 @@ const Home = () => {
               <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-xl max-w-xs">
                 <p className="font-semibold text-primary mb-1">Diplômé de l'EOP Paris</p>
                 <p className="text-sm text-muted-foreground">
-                  Formation complète de 5 ans agréée par le Ministère de la Santé
+                  Formation agréée par le Ministère de la Santé.
                 </p>
               </div>
             </div>
@@ -212,7 +214,7 @@ const Home = () => {
               className="w-full"
             >
               <CarouselContent>
-                {patientTypes.slice(0, 3).map((type, index) => (
+                {mobilePatientTypes.map((type, index) => (
                   <CarouselItem key={index}>
                     <Link to={type.link}>
                       <Card className="group hover:shadow-lg transition-all duration-300 cursor-pointer overflow-hidden h-full">
@@ -242,7 +244,7 @@ const Home = () => {
 
             {/* Pagination Dots */}
             <div className="flex justify-center gap-2 mt-4">
-              {patientTypes.slice(0, 3).map((_, index) => (
+              {mobilePatientTypes.map((_, index) => (
                 <button
                   key={index}
                   onClick={() => api?.scrollTo(index)}

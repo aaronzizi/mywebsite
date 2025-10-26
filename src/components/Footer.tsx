@@ -101,6 +101,8 @@ const Footer = () => {
               Mentions légales
             </Link>
           </p>
+          <p className="mt-4">Site réalisé par <a href="https://elonemaccioni.fr" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors font-bold underline">Elone Maccioni</a></p>
+
         </div>
       </div>
     </footer>
