@@ -10,7 +10,7 @@ const MentionsLegales = () => {
               <p>Aaron Zitoun - Ostéopathe D.O.</p>
               <p>11 Rue Etienne Marcel, 93500 Pantin</p>
               <p>Téléphone : 01 48 45 88 08</p>
-              <p>Email : contact@zitoun-osteopathe-pantin.fr</p>
+              <p>Email : aaronzitoun12@gmail.com</p>
             </section>
 
             <section>
