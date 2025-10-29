@@ -547,7 +547,7 @@ const Home = () => {
                       <p>🚇 <strong>Métro :</strong> Hoche (ligne 5)</p>
                       <p>🚌 <strong>Bus :</strong> Ligne 330 - Etienne Marcel - Cornet</p>
                       <p>🚗 <strong>Voiture :</strong> Stationnement possible à proximité</p>
-                      <p>♿️ <strong>Handicaper :</strong> Entrée accessible PMR</p>
+                      <p>♿️ <strong>Handicapé :</strong> Entrée accessible PMR</p>
                     </div>
                   </div>
                 </CardContent>
