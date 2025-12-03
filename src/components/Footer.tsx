@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Instagram } from "lucide-react";
 import logoAZ from "@/assets/logo-az.png";
 
 const Footer = () => {
@@ -73,6 +73,17 @@ const Footer = () => {
                 <Mail className="h-4 w-4 text-primary flex-shrink-0" />
                 <a href="mailto:contact@zitoun-osteopathe-pantin.fr" className="text-muted-foreground hover:text-primary transition-colors">
                   aaronzitoun12@gmail.com
+                </a>
+              </li>
+              <li className="flex items-center gap-2">
+                <Instagram className="h-4 w-4 text-primary flex-shrink-0" />
+                <a
+                  href="https://www.instagram.com/aaron.osteopathe?igsh=MTFwaDExdXd3ZHNudA=="
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  @aaron.osteopathe
                 </a>
               </li>
             </ul>

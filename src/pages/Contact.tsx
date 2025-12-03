@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { MapPin, Phone, Mail, Clock, ArrowRight } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, ArrowRight, Instagram } from "lucide-react";
 import Seo from "@/components/Seo";
 
 const Contact = () => {
@@ -30,46 +30,77 @@ const Contact = () => {
         <div className="container-custom">
           <div className="grid lg:grid-cols-2 gap-12">
             <div className="space-y-8">
-              <Card>
-                <CardContent className="p-8 space-y-6">
-                  <div className="flex items-start gap-4">
-                    <MapPin className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
-                    <div>
-                      <h3 className="font-semibold text-lg mb-2">Adresse</h3>
-                      <p className="text-muted-foreground">11 Rue Etienne Marcel<br />93500 Pantin</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-4">
-                    <Phone className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
-                    <div>
-                      <h3 className="font-semibold text-lg mb-2">Téléphone</h3>
-                      <a href="tel:0148458808" className="text-primary hover:underline text-lg">
-                        01 48 45 88 08
-                      </a>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-4">
-                    <Mail className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
-                    <div>
-                      <h3 className="font-semibold text-lg mb-2">Email</h3>
-                      <a href="mailto:contact@zitoun-osteopathe-pantin.fr" className="text-primary hover:underline">
-                         aaronzitoun12@gmail.com
-                      </a>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-4">
-                    <Clock className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
-                    <div>
-                      <h3 className="font-semibold text-lg mb-2">Horaires</h3>
-                      <div className="text-muted-foreground space-y-1">
-                        <p>Lundi, Mercredi et Jeudi</p>
-                        <p>9h00 - 19h30</p>
-                        <p className="text-sm italic mt-2">Sur rendez-vous uniquement</p>
+                <Card>
+                  <CardContent className="p-8 space-y-6">
+
+                    {/* Adresse */}
+                    <div className="flex items-start gap-4">
+                      <MapPin className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+                      <div>
+                        <h3 className="font-semibold text-lg mb-2">Adresse</h3>
+                        <p className="text-muted-foreground">
+                          11 Rue Etienne Marcel<br />93500 Pantin
+                        </p>
                       </div>
                     </div>
-                  </div>
-                </CardContent>
-              </Card>
+
+                    {/* Téléphone */}
+                    <div className="flex items-start gap-4">
+                      <Phone className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+                      <div>
+                        <h3 className="font-semibold text-lg mb-2">Téléphone</h3>
+                        <a href="tel:0148458808" className="text-primary hover:underline text-lg">
+                          01 48 45 88 08
+                        </a>
+                      </div>
+                    </div>
+
+                    {/* Email */}
+                    <div className="flex items-start gap-4">
+                      <Mail className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+                      <div>
+                        <h3 className="font-semibold text-lg mb-2">Email</h3>
+                        <a
+                          href="mailto:aaronzitoun12@gmail.com"
+                          className="text-primary hover:underline"
+                        >
+                          aaronzitoun12@gmail.com
+                        </a>
+                      </div>
+                    </div>
+
+                    {/* Instagram */}
+                    <div className="flex items-start gap-4">
+                      <Instagram className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+                      <div>
+                        <h3 className="font-semibold text-lg mb-2">Instagram</h3>
+                        <a
+                          href="https://www.instagram.com/aaron.osteopathe?igsh=MTFwaDExdXd3ZHNudA=="
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-primary hover:underline"
+                        >
+                          @aaron.osteopathe
+                        </a>
+                      </div>
+                    </div>
+
+                    {/* Horaires */}
+                    <div className="flex items-start gap-4">
+                      <Clock className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+                      <div>
+                        <h3 className="font-semibold text-lg mb-2">Horaires</h3>
+                        <div className="text-muted-foreground space-y-1">
+                          <p>Lundi, Mercredi et Jeudi</p>
+                          <p>9h00 - 19h30</p>
+                          <p className="text-sm italic mt-2">Sur rendez-vous uniquement</p>
+                        </div>
+                      </div>
+                    </div>
+
+                  </CardContent>
+                </Card>
+
 
               <Card className="bg-primary text-white">
                 <CardContent className="p-8 text-center">
