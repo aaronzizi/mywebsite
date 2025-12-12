@@ -43,7 +43,6 @@ export default defineConfig(({ mode }) => {
         ],
         exclude: [],
         changefreq: 'weekly',
-        priority: 0.7,
         lastmod: new Date(),
         readable: true,
         generateRobotsTxt: false,
